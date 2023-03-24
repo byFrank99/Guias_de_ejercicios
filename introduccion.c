@@ -77,7 +77,7 @@ int main(void){
 /*
 Teniendo el radio de un cilindro y su altura escribir funciones que calculen: diametro, circunferencia,area de la base, volumen y area del cilindro. (Notar que algunas funciones pueden resolverse llamando a las ya programadas.)
 */
-
+/*
 float diametro(float radio, float altura) {
     double pi = 3.1415926535897932;
     return pi * radio * radio * altura;    // seria recomendable usar un DEFINE para el PI
@@ -96,3 +96,154 @@ float volumen(float radio, float altura) {
 float area_cilindro(float radio, float altura) {
     return circunferencia(radio) * altura;
 }
+*/
+/* ------------------------------------ 7 ----------------------------------- */
+/*
+Escribir una función que dado un número entero devuelva 1 si el mismo es impar y 0 si fuera par.
+*/
+/*
+int es_par (int numero){
+    if(numero % 2 == 0){
+    printf("Par.\n");
+    return 0;
+    }
+    printf("Impar\n");
+    return 0;
+}
+int main(void){
+    es_par(100);
+    return 0;
+}
+*/
+/* ------------------------------------ 8 ----------------------------------- */
+/*
+Escribir una función que dado un número devuelva el primer número múltiplo de 10 inferior a él. Por ejemplo, para 153 debe devolver 150.
+*/
+/*
+int primer_multiplo(int numero){
+    return numero - (numero % 10);
+}
+int main(void){
+    printf("El primer multiplo de 10 es: %d\n", primer_multiplo(153));
+    return 0;
+}
+*/
+/* ------------------------------------ 9 ----------------------------------- */
+/*
+Escribí una función que compare (reciba) 2 números enteros a y b. La función debe retornar un número menor, igual o mayor que cero si a es, respectivamente, menor que, igual a, o mayor que b.
+*/
+/*
+int comparar(int a, int b){
+
+    a <= b ? printf("0\n") : printf("-1\n");
+    return 0;
+}
+
+int main(void){
+    comparar(2,-3);
+    return 0;
+}
+*/
+/* ----------------------------------- 10 ----------------------------------- */
+/*
+Escribir una función que reciba un número entero y devuelva 1 si el número es positivo y -1 si el número es negativo.
+*/
+/*
+int es_positivo(int a){
+    if(a > 0){
+        printf("Es positivo.\n");
+        return 0;
+    } else if(a < 0){
+        printf("Es negativo.\n");
+        return 0;
+    }else
+    printf("Es neutro.\n");
+    return 0;
+}
+int main(void) {
+    es_positivo(5);
+    return 0;
+}
+*/
+/* ----------------------------------- 11 ----------------------------------- */
+/*
+Similar al ejercicio 10
+*/
+/* ----------------------------------- 12 ----------------------------------- */
+/*
+Escribir un programa que imprima, en 3 líneas separadas, su nombre, apellido y padrón.
+*/
+/*
+int main(void) {
+    printf("Nicasio\n");
+    printf("Maciel\n");
+    printf("123456\n");
+    return 0;
+}
+*/
+
+/* -------------------------------------------------------------------------- */
+/*                         Programas sencillos: Ciclos                        */
+/* -------------------------------------------------------------------------- */
+/* ----------------------------------- 13 ----------------------------------- */
+/*
+Escribir un programa que imprima la tabla de multiplicar del número 7.
+*/
+/*
+int main(void) {
+    printf("La tabla del 7 (hasta el 10)\n");
+    int i = 0;
+    while(i <=10){
+        int numero = 7 * i;
+        printf("7 * %d = %d\n", i, numero);
+        i++;
+    }
+}
+*/
+/* ----------------------------------- 14 ----------------------------------- */
+/*
+Escribir un programa que imprima la tabla de multiplicar para los números del 1 al 10.
+*/
+/*
+int main(void) {
+    int i = 0, j = 0;
+    for (i = 0; i <= 10; i++) {
+        printf("Tabla del %d\n", i);
+        for (j = 0; j <= 10; j++) {
+            int numero = i * j;
+            printf("%d\n", numero);
+        }
+    }
+    return 0;
+}
+*/
+/* ----------------------------------- 15 ----------------------------------- */
+/*
+Escribir un programa que imprima la tabla de conversión de Celsius a Fahrenheit para los valores de 0ºC a 100ºC de 10 en 10 con 2 decimales.
+
+Nota: Utilizar la función programada en el ejercicio 3
+*/
+/*
+int main(void) {
+    for(int i = 0; i <=100; i+=10){
+        celsius_fahrenheit(i);
+        printf("%d°C = %.2f°F\n", i,celsius_fahrenheit(i));
+    }
+    return 0;
+}
+*/
+/* ----------------------------------- 16 ----------------------------------- */
+/*
+Escribir un programa que imprima por pantalla todas las fichas del dominó, sin repetir.
+*/
+/*
+int main(void) {
+    for(int i = 1; i <= 6; i++){
+        printf("Ficha con %d\n", i);
+        for(int j = 01; j <= 6; j++){
+            printf("%d - %d\n", i, j);
+        }
+    }
+    return 0;
+}
+*/
